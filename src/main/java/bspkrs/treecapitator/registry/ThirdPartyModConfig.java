@@ -106,7 +106,7 @@ public class ThirdPartyModConfig
 
     public static boolean isValidNBT(NBTTagCompound tpModCfg)
     {
-        for (String s : (Set<String>) tpModCfg.getKeySet())
+        for (String s : (Set<String>) tpModCfg.func_150296_c())
             if (!validKeys.contains(s))
                 TCLog.warning("Unknown tag \"%s\" found while verifying a ThirdPartyModConfig NBTTagCompound object", s);
 

@@ -205,7 +205,7 @@ public class ForgeEventHandler
 
             if (thisItem != null && thisItem.getItem() != null)
                 h.putString(GameData.getItemRegistry().getNameForObject(thisItem.getItem()), Charsets.UTF_8)
-                        .putInt(thisItem.getMetadata());
+                        .putInt(thisItem.getItemDamage());
 
             return h.hash().hashCode();
         }

@@ -199,7 +199,7 @@ public class TreeDefinition
 
     public static boolean isValidNBT(NBTTagCompound treeDefNBT)
     {
-        for (String s : (Set<String>) treeDefNBT.getKeySet())
+        for (String s : (Set<String>) treeDefNBT.func_150296_c())
             if (!validKeys.contains(s))
                 TCLog.warning("Unknown tag \"%s\" found while verifying a TreeDefinition NBTTagCompound object", s);
 

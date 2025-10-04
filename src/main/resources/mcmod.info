@@ -4,8 +4,8 @@
     "modid": "Treecapitator",
     "name": "Treecapitator",
     "description": "Allows you to chop down entire trees by breaking a single log.",
-    "version": "${mod_version}",
-    "mcversion": "${minecraft_version}",
+    "version": "2.0.4fork1",
+    "mcversion": "1.7.10",
     "url": "http://www.minecraftforum.net/topic/1009577-/",
     "updateUrl": "",
     "authorList": [ "DaftPVF", "bspkrs" ],
@@ -13,8 +13,7 @@
     "logoFile": "",
     "screenshots": [  ],
     "parent": "",
-    "requiredMods": [ "Forge@[${forge_version},)", "bspkrsCore@[${bscore_version},)" ],
-    "dependencies": [ "Forge@[${forge_version},)", "bspkrsCore@[${bscore_version},)" ],
+    "requiredMods": [ "Forge@[10.13.4.1614,)", "bspkrsCore@[6.16,)" ],
     "dependants": [  ],
     "useDependencyInformation": "true"
   }]

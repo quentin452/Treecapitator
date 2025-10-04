@@ -70,7 +70,7 @@ public class Treecapitator
         if ((isAxeItemEquipped(entityPlayer, block, blockMetadata) || !TCSettings.needItem))
         {
             if (!entityPlayer.capabilities.isCreativeMode && TCSettings.allowItemDamage && axe != null
-                    && (axe.isItemStackDamageable() && (axe.getMaxDurability() - axe.getMetadata() <= TCSettings.damageMultiplier))
+                    && (axe.isItemStackDamageable() && (axe.getMaxDamage() - axe.getItemDamage() <= TCSettings.damageMultiplier))
                     && !TCSettings.allowMoreBlocksThanDamage)
             {
                 if (shouldLog)
@@ -92,7 +92,7 @@ public class Treecapitator
         if ((isAxeItemEquipped() || !TCSettings.needItem))
         {
             if (!player.capabilities.isCreativeMode && TCSettings.allowItemDamage && axe != null
-                    && (axe.isItemStackDamageable() && (axe.getMaxDurability() - axe.getMetadata() <= TCSettings.damageMultiplier))
+                    && (axe.isItemStackDamageable() && (axe.getMaxDamage() - axe.getItemDamage() <= TCSettings.damageMultiplier))
                     && !TCSettings.allowMoreBlocksThanDamage)
             {
                 TCLog.debug("Chopping disabled due to axe durability.");
